@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /*border: 1px solid red;*/
+}
+
+.page-wrap {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+.main-background {
+    height: 60%;
+    width: 100%;
+    /*border: 1px solid green;*/
+    background: url('http://lorempixel.com/image_output/nature-q-c-640-320-10.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.title-container {
+    /*border: 1px solid rebeccapurple;*/
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    /*border: 1px solid red;*/
+    /*width: auto;*/
+    height: 80px;
+}
+
+    .title h1 {
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #D4EE9F;
+        line-height: 80px;
+    }
+
+.sub-title {
+    /*border: 1px solid yellow;*/
+}
+
+    .sub-title h3 {
+        font-size: 30px;
+        color: #A5C663;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+    
+.content-wrapper {
+    width: 100%;
+    height: 40%;
+    border: 1px solid #D4EE9F;
+    background: #D4EE9F;
+}
+
+.main-section {
+    margin: 40px auto;
+    width: 90%;
+    height: auto;
+    /*border: 1px solid blue;*/
+}
+
+.img-holder {
+    width: 280px;
+    height: auto;
+    display: inline-block;
+}
+
+    .img-holder img {
+        width: 280px;
+    }
+
+.content {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid red;
+    width: calc(100% - 280px);
+    float: right;
+}
+
+    .content h2 {
+        font-size: 36px;
+        color: #354F00;
+        font-weight: 100;
+        padding-left: 20px;
+        padding-top: 2px;
+    }
+    
+hr {
+    border-top: 4px solid #354F00;
+    padding-left: 20px;
+    margin: 2px 20px 6px 20px;
+}
+    
+    .content h4 {
+        font-weight: 100;
+        font-size: 16px;
+        padding: 0 20px 5px 20px;
+        line-height: 26px;
+    }

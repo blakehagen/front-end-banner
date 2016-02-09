@@ -92,6 +92,7 @@ h1,h2,h3,h4,h5,h6 {
 
     .img-holder img {
         width: 280px;
+        border-radius: 5px;
     }
 
 .content {
@@ -100,21 +101,16 @@ h1,h2,h3,h4,h5,h6 {
     /*border: 1px solid red;*/
     width: calc(100% - 280px);
     float: right;
-    height: 175px;
+    height: 174px;
     overflow: hidden;
 }
 
 .content-extend {
     display: inline-block;
     vertical-align: top;
-    /*border: 1px solid blue;*/
     width: calc(100% - 280px);
     float: right;
     height: auto;
-    /*max-height: auto;*/
-    overflow: visible;
-    
-    
 }
 
     .content h2 {
@@ -139,11 +135,10 @@ hr {
     }
     
 .btn-container {
-    /*border: 1px solid green;*/
     display: inline-block;
     float: right;
     width: calc(100% - 280px);
-    margin: 9px 0;
+    margin: 9px 0 9px 0;
 }
     
     .btn-container h4 {
@@ -153,3 +148,84 @@ hr {
         cursor: pointer;
         margin-right: 20px;
     }
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+    .title h1 {
+        font-size: 50px;
+    }
+    
+    .sub-title h3 {
+        font-size: 30px;
+    }
+    
+    .img-holder {
+        width: 220px;
+    }
+
+    .img-holder img {
+        width: 220px;
+    }
+    
+    .content {
+        width: calc(100% - 220px);
+    }
+    
+    .content-extend {
+        width: calc(100% - 220px);
+    }
+    
+    .btn-container {
+        width: calc(100% - 220px);
+    }
+
+}
+
+@media (max-width: 700px) {
+    
+    .main-section {
+        width: 100%;
+    }
+    
+    .img-holder {
+        width: 100%;
+        margin: 0 auto 30px;
+        float: none;
+        text-align: center;
+    }
+    
+    .img-holder img {
+        width: 70%;
+    }
+    
+    .content {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .content-extend {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .btn-container {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .title h1 {
+        font-size: 40px;
+    }
+    
+    .sub-title h3 {
+        font-size: 20px;
+    }
+}
